@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Decentralized To-Do List</h1>
+
+        <button id="connectWalletBtn">Connect Wallet</button>
+        <p id="walletStatus">Status: Not Connected</p>
+        <p>Account: <span id="accountAddress">N/A</span></p>
+        <hr>
+
+        <div id="appContent" style="display: none;"> <h2>Add New Task</h2>
+            <input type="text" id="newTaskContent" placeholder="Enter task description">
+            <button id="addTaskBtn">Add Task</button>
+            <p id="txStatus"></p> <h2>Tasks</h2>
+            <ul id="taskList">
+                <li class="loading">Loading tasks...</li>
+            </ul>
+        </div>
+    </div>
+    <div id="transactionDetails" style="display: none;">
+        <h3>Transaction Details</h3>
+        <p id="transactionInfo"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script>
+  const web3 = new Web3(window.ethereum);
+</script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

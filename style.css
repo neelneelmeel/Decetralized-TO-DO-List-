@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#connectWalletBtn {
+    background-color: #28a745;
+}
+#connectWalletBtn:hover {
+    background-color: #218838;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: calc(100% - 110px); /* Adjust based on button width */
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#taskList li button {
+    background-color: #ffc107;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+#taskList li button:hover {
+    background-color: #e0a800;
+}
+
+#taskList li.completed button {
+    background-color: #6c757d;
+}
+#taskList li.completed button:hover {
+    background-color: #5a6268;
+}
+
+
+.loading {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+#walletStatus, #accountAddress, #txStatus {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#txStatus {
+    margin-top: 10px;
+    font-style: italic;
+}
